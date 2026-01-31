@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+html,
+body {
+  background-color: theme('colors.background');
+  color: theme('colors.slate.100');
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+* {
+  border-color: theme('colors.slate.800');
+}
+
+::selection {
+  background-color: theme('colors.accent.DEFAULT');
+  color: #030712;
+}
